@@ -1,0 +1,148 @@
+/* frontend/src/Usuarios.css */
+
+.usuarios-container {
+    background-color: #371C5A; /* Morado oscuro del fondo */
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; /* O la fuente que uses en tu proyecto */
+}
+
+.usuarios-header {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilo de Tarjeta (similar al login) */
+.usuarios-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 900px; /* Ancho para que entre la tabla cómoda */
+    margin-bottom: 30px;
+}
+
+.usuarios-card h3 {
+    color: #371C5A;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Formulario de Alta */
+.form-alta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.input-field {
+    background-color: #F4F4F4;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #FACC15; /* Acento amarillo al enfocar */
+    background-color: #FFF;
+}
+
+.btn-primary {
+    background-color: #371C5A; /* Botón morado */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: span 2; /* Para que el botón ocupe las dos columnas */
+}
+
+.btn-primary:hover {
+    background-color: #2a1545;
+}
+
+/* Estilos de la Tabla */
+.usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.usuarios-table th {
+    background-color: #F4F4F4;
+    color: #371C5A;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.usuarios-table td {
+    padding: 12px;
+    border-bottom: 1px solid #E0E0E0;
+    color: #555;
+    vertical-align: middle;
+}
+
+.usuarios-table tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Acciones en la tabla */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #371C5A;
+    border: 1px solid #371C5A;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: #371C5A;
+    color: white;
+}
+
+.btn-secondary:disabled {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-accent {
+    background-color: #FACC15; /* Acento amarillo */
+    color: #371C5A;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.btn-accent:hover {
+    background-color: #e5b90f;
+}
